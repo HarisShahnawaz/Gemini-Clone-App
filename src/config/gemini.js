@@ -1,14 +1,18 @@
-const apiKey = "";
-import { GoogleGenAI } from "@google/genai";
+import Groq from "groq-sdk";
 
-const ai = new GoogleGenAI({});
+const client = new Groq({
+  apiKey: "",
+  dangerouslyAllowBrowser: true,
+});
 
-async function main() {
-  const response = await ai.models.generateContent({
-    model: "gemini-3-flash-preview",
-    contents: "Explain how AI works in a few words",
+const runChat = async (prompt) => {
+  const response = await client.chat.completions.create({
+    model: "llama-3.3-70b-versatile",
+    messages: [{ role: "user", content: prompt }],
+    max_tokens: 2048,
   });
-  console.log(response.text);
-}
+  console.log(response.choices[0].message.content);
+  return response.choices[0].message.content;
+};
 
-await main();
+export default runChat;
