@@ -1,16 +1,87 @@
-# React + Vite
+# HarixAi - Gemini Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Gemini AI clone built with React and Vite, powered by Groq's LLaMA 3.3 70B model.
 
-Currently, two official plugins are available:
+## 📸 Screenshot
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![HarixAi Screenshot](screenshot.png)
 
-## React Compiler
+## 🚀 Live Demo
+[HarixAi Live](https://gemini-clone-app-seven.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Groq SDK (LLaMA 3.3 70B)
+- CSS3
+- React Context API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- AI-powered chat interface
+- Real-time responses powered by LLaMA 3.3 70B
+- Clean Gemini-inspired UI
+- Prompt suggestion cards
+- Chat history sidebar
+- Enter key support for sending prompts
+- Animated loading state
+
+## 📦 Installation
+
+1. Clone the repo
+```bash
+git clone https://github.com/HarisShahnawaz/Gemini-Clone.git
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Create `.env` file in root directory
+```
+VITE_GROQ_API_KEY=your_groq_api_key_here
+```
+
+4. Run the development server
+```bash
+npm run dev
+```
+
+## 🔑 Environment Variables
+
+| Key | Description |
+|-----|-------------|
+| `VITE_GROQ_API_KEY` | Your Groq API key from [console.groq.com](https://console.groq.com) |
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Main/
+│   │   ├── Main.jsx
+│   │   └── Main.css
+│   └── Sidebar/
+│       ├── Sidebar.jsx
+│       └── Sidebar.css
+├── context/
+│   └── Context.jsx
+├── assets/
+└── App.jsx
+```
+
+## 🙏 Acknowledgements
+
+- Inspired by Google Gemini
+- Powered by Groq's LLaMA 3.3 70B model
+
+## 👨‍💻 Author
+
+**Haris Shahnawaz**
+- GitHub: [@HarisShahnawaz](https://github.com/HarisShahnawaz)
+
+
+## 📬 Contact
+**Haris Shahnawaz** — [LinkedIn](https://www.linkedin.com/in/haris-shahnawaz-670aa8291/) | [Email](mailto:harisshahnawaz97@gmail.com)
