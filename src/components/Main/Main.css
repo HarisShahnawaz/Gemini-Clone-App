@@ -294,7 +294,7 @@
   background-color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 786px) {
   .main {
     min-height: 100vh;
     padding-bottom: 160px;
@@ -333,11 +333,13 @@
   }
 
   .main-bottom {
-    position: relative;
-    bottom: unset;
+    position: relative !important;
+    bottom: unset !important;
+    left: unset !important;
+    transform: none !important;
     width: 100%;
     max-width: 900px;
-    padding: 0px 20px;
+    padding: 0px 15px;
     margin: auto;
     background-color: white;
   }
@@ -372,6 +374,6 @@
   }
 
   .result-data p {
-    font-size: 14px;
+    font-size: 14spx;
   }
 }
